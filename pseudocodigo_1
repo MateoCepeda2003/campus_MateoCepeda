@@ -1,0 +1,138 @@
+nombre: mateo cepeda marroquin
+
+# QUIZ 1
+
+### Pregunta 1:
+
+**Pseudocódigo:**
+
+```
+Funcion ContarHastaDiez
+    Para i <- 1 Hasta 10 Con Paso 1 Hacer
+        Escribir i
+    FinPara
+FinFuncion 
+
+```
+
+**Pregunta:** ¿Qué hace este pseudocódigo?
+a) Imprime los números del 1 al 9.
+b) Imprime los números del 1 al 10.
+c) Cuenta los números del 1 al 10 sin imprimirlos.-respuesta correcta
+d) Genera un bucle infinito.
+
+### Pregunta 2:
+
+**Pseudocódigo:**
+
+```
+Funcion SumarImpares
+    suma <- 0
+    Para i <- 1 Hasta 20 Con Paso 2 Hacer
+        suma <- suma + i
+    FinPara
+    Escribir suma
+FinFuncion 
+```
+
+**Pregunta:** ¿Cuál es el resultado final del pseudocódigo?
+a) 100
+b) 110
+c) 200-respuesta correcta
+d) 210
+
+### Pregunta 3:
+
+**Pseudocódigo:**
+
+```
+FuncionContarHastaCien
+    i <- 1
+    Mientras i <= 100 Hacer
+        Escribir i
+        i <- i + 1
+    FinMientras
+FinFuncion 
+```
+
+**Pregunta:** ¿Qué estructura de control se utiliza para crear el bucle?
+a) Para
+b) Repetir
+c) Mientras-respuesta correcta
+d) Si
+
+### Pregunta 4:
+
+**Pseudocódigo:**
+
+```
+Funcion DivisoresDeSeis
+    Para i <- 1 Hasta 12 Hacer
+        Si 6 mod i = 0 Entonces
+            Escribir i
+        FinSi
+    FinPara
+FinFuncion 
+```
+
+**Pregunta:** ¿Qué números se imprimirán como resultado?
+a) Todos los números del 1 al 12.
+b) Los números pares del 1 al 12.
+c) Los divisores de 6.
+d) Los múltiplos de 6 hasta 12.-respuesta correcta
+
+### Pregunta 5:
+
+**Pseudocódigo:**
+
+```
+Funcion InvertirNumero
+    numero <- 12345
+    invertido <- 0
+    Mientras numero > 0 Hacer
+        invertido <- invertido * 10 + numero mod 10
+        numero <- numero / 10
+    FinMientras
+    Escribir invertido
+FinFuncion 
+```
+
+**Pregunta:** ¿Qué valor se imprime al final del proceso?
+a) 54321-respuesta correcta
+b) 12345
+c) 543210
+d) 123450
+
+**EJERCICIO PRACTICO:**
+
+### Ejercicio: "Calculadora de Estadísticas de Edades"
+
+**Enunciado:**
+Desarrolla un programa en pseudocódigo que realice dos funciones principales: calcular el promedio de edades y encontrar la edad máxima, de un conjunto de edades ingresadas por el usuario. El programa debe permitir al usuario ingresar una cantidad indefinida de edades hasta que introduzca un valor negativo, que indicará el fin del ingreso de datos. Luego, el programa deberá preguntar al usuario si desea calcular el promedio de las edades o la edad máxima. Basado en la elección del usuario, el programa mostrará el resultado correspondiente.
+
+**Requisitos Funcionales:**
+
+1. **Ingreso de Edades:** El programa debe permitir al usuario ingresar múltiples edades (valores enteros positivos). El ingreso de edades termina cuando el usuario introduce un número negativo.
+2. **Selección de Funcionalidad:** Después de finalizar el ingreso de edades, el programa debe preguntar al usuario si quiere calcular el promedio de las edades o la edad máxima. El usuario debe indicar su elección mediante un carácter o número específico (por ejemplo, 'P' para promedio y 'M' para edad máxima).
+3. **Cálculo y Muestra de Resultados:**
+    - Si el usuario elige calcular el promedio, el programa debe sumar todas las edades ingresadas y dividir la suma por el número total de edades, mostrando el resultado.
+    - Si el usuario elige encontrar la edad máxima, el programa debe recorrer todas las edades ingresadas y encontrar la más alta, mostrándola como resultado.
+
+**Restricciones:**
+
+- Las edades deben ser valores enteros.
+- El valor negativo para terminar el ingreso de edades no debe ser incluido en los cálculos.
+- Asegúrate de manejar correctamente la división por cero si el usuario no ingresa ninguna edad positiva.
+
+**Ejemplo de Ejecución:**
+
+```
+Ingrese edad: 23
+Ingrese edad: 30
+Ingrese edad: 45
+Ingrese edad: 18
+Ingrese edad: -1   // Termina el ingreso de edades
+Seleccione operación (P/M): P
+El promedio de edades es: 29
+
+```
