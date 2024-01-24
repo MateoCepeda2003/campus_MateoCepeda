@@ -13,3 +13,67 @@ else:
 
 #Clasificación de Notas:
 Pide una calificación numérica y utiliza condicionales elif para asignar una calificación en letras, como A, B, C o D.
+------------------------------------------------------------------------------------------------------------------------
+print("este programa sirve para saber tu nota final")
+
+nota = eval(input("por favor ingrese una calificacion numerica: "))
+
+if nota <= 100:
+    print("Tu nota es A, excelente")
+elif nota <= 80:
+    print("Tu nota es b,bueno")
+elif nota <= 60:
+    print("Tu nota es c, regular")
+else:
+    print("Tun nota es D, desaprobado") 
+#Decisión de Comida:
+Permítele a alguien elegir un tipo de comida y utiliza condicionales if para recomendar un restaurante según la elección (por ejemplo, comida italiana, mexicana o china).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+print("bienvenido, que decias comer hoy?")
+print("hoy tengo para ofrecerte comida picante,mariscos, asados al carbon y frijoladas ,cual deseas probar?")
+restaurante = input("ingresa comida desea comer: ")
+
+if restaurante == "picante":
+    print("Valla a un restaurante mexicano")
+elif restaurante == "mariscos":
+    print("Valla a un restaurante peruano")
+elif restaurante == "asados al carbon":
+    print("Valla a un restaurante argentino")
+elif restaurante == "frijoladas":
+    print("valla a un restaurante colombiano")  
+else:
+    print("por favor ingrese algunas de las comidas recomendadas") 
+
+#verificación de Contraseña:
+Solicita una contraseña y utiliza una declaración if para verificar si coincide con una contraseña predefinida antes de permitir el acceso.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+print("bienvenido, por favor dime la contraseña")
+contrasena_predefinida = "12345"
+intentos = 0
+
+while intentos < 3:
+    contrasena_ingresada = input("Ingrese su contraseña: ")
+
+
+    if contrasena_ingresada == contrasena_predefinida:
+     
+        print("contraseña correcta, bienvenido")
+        break
+    else:
+         intentos += 1
+         print("Contraseña incorrecta, vuelta a intentarlo")
+
+if intentos == 3:
+    print("acceso denegado")
+#Verificación de Palíndromo:
+Pide a alguien que ingrese una palabra y utiliza condicionales para determinar si es un palíndromo, es decir, si se lee igual de izquierda a derecha y de derecha a izquierda.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+palabra = input("Ingrese una palabra: ")
+palabra = palabra.lower()
+palabra_invertida = palabra[::-1]
+if palabra == palabra_invertida:
+    
+    print("La palabra", palabra, "es un palindromo")
+else:
+    
+    print("La palabra", palabra, "no es un palindromo")
