@@ -1,0 +1,15 @@
+# Verificación de Edad:
+Pregunta a una persona su edad y utiliza una declaración if para determinar si es mayor de 18 años y puede votar.
+---------------------------------------------------------------------------------------------------------------
+print("bienvenido a la votacion presidencial 2024")
+nombre= input ("por favor ingrese su nombre")
+
+edad=input("por favor ingrese su edad actual")
+edad= int(edad)
+if edad>=18:
+    print (f"{nombre}, usted tiene la edad necesaria para votar")
+else:
+    print(f"{nombre}, usted no tiene la edad necesaria para votar")
+
+#Clasificación de Notas:
+Pide una calificación numérica y utiliza condicionales elif para asignar una calificación en letras, como A, B, C o D.
