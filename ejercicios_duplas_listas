@@ -1,0 +1,16 @@
+#Crear una tupla con nombres de frutas y acceder a un elemento específico.
+
+print("bienvenido, elije cual frutas deseas ver:")
+print("tenemos manzana=0,banano=1,cereza=2,durazno=3,fresa=4 ")
+tipos_frutas = ("manzana", "banano", "cereza", "durazno", "fresa")
+
+
+llamar_frutas = int(input("Ingrese el índice o numero de la fruta que desea ver (0, 1, 2, 3, 4): "))
+
+if llamar_frutas >= 0 and llamar_frutas < len(tipos_frutas):
+
+    tipos_frutas = tipos_frutas[llamar_frutas]
+    print(f"El elemento seleccionado es: {tipos_frutas}")
+else:
+    
+    print("Índice inválido. Por favor, ingrese un índice válido.")
