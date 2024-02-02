@@ -14,3 +14,110 @@ if llamar_frutas >= 0 and llamar_frutas < len(tipos_frutas):
 else:
     
     print("Índice inválido. Por favor, ingrese un índice válido.")
+
+#Concatenar dos tuplas y crear una nueva.
+#para este ejercicio decidi crear un ejemplo en donde las duplas seran "nombres y apellidos" y las voy a concatenar para al final crear una dupla que tenga ambas para formar un nombre completo.
+
+nombres = []
+apellidos = []
+
+cantidad_nombres = int(input("¿Cuántos nombres y apellidos vas a  ingresar? "))
+
+for i in range(cantidad_nombres):
+    nombre = input(f"Ingrese nombre #{i+1}: ")
+    apellido = input(f"Ingrese apellido #{i+1}: ")
+    nombres.append(nombre)
+    apellidos.append(apellido)
+
+
+nombres_apellidos = list(zip(nombres, apellidos))
+
+print("Los nombres completos son:")
+for nombre, apellido in nombres_apellidos:
+    print(f"{nombre} {apellido}")
+
+#Convertir una tupla en una lista y modificar un elemento.
+#en este ejemplo solo pude utilizar un caracter o numero para el ejemplo con dupla.
+precios_producto = (4000,5000,18000,4500)
+
+precios_lista = list(precios_producto)
+
+precios_lista[3] = 4000
+
+
+print(precios_lista)  
+#aqui utilice diccionarios para poder ingresar mas de una categoria o elemento y se entienda mejor que hace el ejercicio pero ahora es convertir diccionario en lista y modificar algun indice.
+# Definir un diccionario con los precios de los productos
+precios_producto = {'harina': 4000, 'zucar': 5000, 'aceite': 18000, 'arroz': 4500}
+
+# Convertir el diccionario en una lista
+precios_lista = list(precios_producto.items())
+
+# Modificar el tercer precio
+precios_lista[2] = ('aceite', 15000)
+
+# Imprimir la lista de precios modificada
+print(precios_lista)  # [('harina', 4000), ('zucar', 5000), ('aceite', 15000), ('arroz', 4500)]
+
+#Encontrar la longitud de una tupla.
+    
+numeros_contar=(1,2,3,4,5)
+
+cantidad_numeros=len(numeros_contar)
+
+print(cantidad_numeros)
+
+#Utilizar slicing para mostrar una porción de una tupla.
+
+numeros=(1,2,3,4,5,6,7,8,9,10)
+
+porcion_numero=numeros[3:7]
+
+print (porcion_numero)
+#Encontrar el índice de un elemento en una tupla.
+
+numeros=(1,2,3,4,5,6,7,8,9,10)
+indice_numero=numeros.index(4)
+
+print(indice_numero)
+
+#Contar cuántas veces aparece un elemento en una tupla.
+numeros=(1,2,3,4,1,5,1,6,1,8,9,1,10)
+
+contar_numero=numeros.count(1)
+
+print(contar_numero)
+
+#Crear una tupla de tuplas y acceder a elementos anidados.
+
+pares_impares=((1,2),(3,4),(5,6),(7,8),(9,10))
+
+elemento=pares_impares[0]
+elemento_espesifico=elemento[1]
+
+print(elemento_espesifico)
+#Comprobar si un elemento existe en una tupla.
+# Definir una tupla
+mi_tupla = (1, 2, 3, 4, 5)
+
+# Comprobar si el elemento 3 existe en la tupla
+existe = 3 in mi_tupla
+
+# Imprimir el resultado de la comprobación
+print(existe)  # True
+
+# Comprobar si el elemento 15 existe en la tupla
+no_existe = 15 in mi_tupla
+
+# Imprimir el resultado de la comprobación
+print(no_existe)  # False
+#Crear una tupla con números y encontrar el mínimo y máximo.
+# Definir una tupla con números
+mi_tupla = (1, 2, 3, 4, 5)
+
+# Encontrar el mínimo de la tupla
+minimo = min(mi_tupla)
+
+# Encontrar el máximo de la tupla
+maximo = max(mi_tupla)
+
